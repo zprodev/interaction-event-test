@@ -1,7 +1,7 @@
 
 const target = document.createElement("canvas");
-target.width = 100;
-target.height = 100;
+target.width = window.innerWidth / 2;
+target.height = window.innerHeight / 2;
 target.style.backgroundColor = "black";
 document.body.appendChild(target);
 
