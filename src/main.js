@@ -1,9 +1,15 @@
 
-const target = document.createElement("canvas");
-target.width = window.innerWidth / 2;
-target.height = window.innerHeight / 2;
-target.style.backgroundColor = "black";
+const target = document.createElement("div");
+target.style.width = window.innerWidth / 2 + 'px';
+target.style.height = window.innerHeight / 2 + 'px';
+target.style.backgroundColor = "gray";
 document.body.appendChild(target);
+
+const child = document.createElement("div");
+child.style.width = window.innerWidth / 4 + 'px';
+child.style.height = window.innerHeight / 4 + 'px';
+child.style.backgroundColor = "black";
+target.appendChild(child);
 
 const IS_SUPPORT_POINTER_EVENTS = 'onpointerdown' in window;
 const IS_SUPPORT_MOUSE_EVENTS = 'onmousedown' in window;
