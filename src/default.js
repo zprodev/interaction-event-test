@@ -48,8 +48,7 @@ const touchEvents = {
 const pointerUi = gui.addFolder('Pointer Events');
 Object.keys(pointerEvents).forEach((key) => {
   pointerUi.add(pointerEvents, key).listen();
-  target.addEventListener(key, (event) => {
-    event.preventDefault();
+  target.addEventListener(key, () => {
     pointerEvents[key] += 1;
   });
 });
@@ -58,8 +57,7 @@ pointerUi.open();
 const mouserUi = gui.addFolder('Mouse Events');
 Object.keys(mouseEvents).forEach((key) => {
   mouserUi.add(mouseEvents, key).listen();
-  target.addEventListener(key, (event) => {
-    event.preventDefault();
+  target.addEventListener(key, () => {
     mouseEvents[key] += 1;
   });
 });
@@ -68,8 +66,7 @@ mouserUi.open();
 const touchUi = gui.addFolder('Touch Events');
 Object.keys(touchEvents).forEach((key) => {
   touchUi.add(touchEvents, key).listen();
-  target.addEventListener(key, (event) => {
-    event.preventDefault();
+  target.addEventListener(key, () => {
     touchEvents[key] += 1;
   });
 });
