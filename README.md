@@ -5,3 +5,6 @@ HTML5 interaction test site
 
 ## [Prevent Default](https://zprodev.github.io/interaction-event-test/#preventdefault)
 
+ - [Mouse only](https://zprodev.github.io/interaction-event-test/#preventdefault.mouse)
+ - [Touch only](https://zprodev.github.io/interaction-event-test/#preventdefault.touch)
+ - [Pointer only](https://zprodev.github.io/interaction-event-test/#preventdefault.pointer)
